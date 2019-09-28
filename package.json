@@ -1,0 +1,19 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "A simple CLI for CRUD-ing todo events",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start-dev": "npm run build && npm start",
+    "build": "./node_modules/.bin/tsc -build tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run build"
+  },
+  "author": "Nick Winner",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "commander": "^3.0.2",
+    "typescript": "^3.6.3"
+  }
+}
